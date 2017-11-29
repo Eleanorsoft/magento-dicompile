@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * di.xml
+ * Replace standard compilation components
+ *
+ * @author     Konstantin Esin <hello@eleanorsoft.com>
+ * @package    Eleanorsoft_DiCompile
+ * @copyright  Copyright (c) 2017 Eleanorsoft (https://www.eleanorsoft.com/
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Setup\Module\Di\App\Task\Operation\ApplicationCodeGenerator" type="Eleanorsoft\DiCompile\Module\Di\App\Task\Operation\ApplicationCodeGenerator" />
+    <preference for="Magento\Setup\Module\Di\App\Task\Operation\Area" type="Eleanorsoft\DiCompile\Module\Di\App\Task\Operation\Area" />
+    <preference for="Magento\Setup\Module\Di\App\Task\Operation\Interception" type="Eleanorsoft\DiCompile\Module\Di\App\Task\Operation\Interception" />
+    <preference for="Magento\Setup\Module\Di\App\Task\Operation\InterceptionCache" type="Eleanorsoft\DiCompile\Module\Di\App\Task\Operation\InterceptionCache" />
+</config>
