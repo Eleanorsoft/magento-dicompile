@@ -4,11 +4,11 @@ Speed up Magento2 DI compilation
 This module caches file lists during compilation to avoid expensive filesystem scans. Speed improvement is about 40% to 50%.
 
 ## Installation
-* Copy `Eleanorsoft` folder to `app/code/`.
-* Run `setup:upgrade`.
-* Run `setup:di:compile`.
+* `composer require shipperhq/module-address-autocomplete`
+* `php bin\magento setup:upgrade`
+* `php bin\magento setup:di:compile`
 
-After compilation, you should see a folder `var/di_cache/` with 4 (or more) files. This is the actual cache. From now your compilation process will use these cached lists instead of scanning the whole filesystem.
+After compilation, you should see a folder `var\di_cache` with 4 (or more) files. This is the actual cache. From now your compilation process will use these cached lists instead of scanning the whole filesystem.
 
 **Note 1:** these caches contain only core files. All custom modules will be scanned each time as usual.
 

@@ -1,0 +1,23 @@
+{
+    "name": "eleanorsoft/module-di-compile",
+    "description": "Speed up Magento2 DI compilation. This module caches file lists during compilation to avoid expensive filesystem scans. Speed improvement is about 40% to 50%.",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Eleanorsoft"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/registration.php"
+        ],
+        "psr-4": {
+            "Eleanorsoft\\DiCompile\\": "src/"
+        }
+    }
+}
